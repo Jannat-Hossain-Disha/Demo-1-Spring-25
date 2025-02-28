@@ -1,23 +1,26 @@
-/* font setup */
-
 .azeret-mono {
-  font-family: "Azeret Mono", serif;
+  font-family: "Azeret Mono", monospace;
   font-optical-sizing: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-margin {
+  margin: 80px 150px;
+}
+
+.margin {
+  margin: 50px 150px;
 }
 
 .center {
   text-align: center;
 }
 
-.flex {
-  display: flex;
-}
-
-.nav-container {
-  display: flex;
-  margin: 50px 150px;
-  justify-content: space-between;
-}
+/* navbar */
 
 .name {
   font-size: 28px;
@@ -25,140 +28,129 @@
 }
 
 .btn-primary {
-  border-radius: 8px;
-  padding: 17px 24px;
-  font-weight: 600px;
   font-size: 20px;
-  color: #0d1321;
+  font-weight: 600;
+  color: rgba(13, 19, 33, 1);
+  padding: 17px 24px;
+  border-radius: 8px;
   border-style: none;
 }
 
-.head-container {
+/* Banner */
+
+.back {
   background-image: url("../assets/Hero-bg.png");
-  padding: 32px 0 32px;
-  text-align: center;
 }
 
-.head-title {
-  font-size: 48px;
-  font-weight: bolder;
+.banner {
+  padding: 26px 220px;
 }
 
-.head-para {
-  font-size: 16px;
-  font-weight: normal;
-  color: rgba(13, 19, 33, 1);
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* Section */
+
+/* Development */
+
+.devlopment {
   width: 850px;
+  text-align: center;
   margin: auto;
-  margin-bottom: 32px;
 }
 
-.sec-container {
-  margin: 80px 150px;
-  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
-  border-radius: 16px;
+.dev-margin {
+  padding: 80px 95px;
   background-color: rgba(13, 19, 33, 0.02);
-  padding: 80px;
+  border-radius: 16px;
 }
 
-.layer-part-1 {
-  width: 480px;
-  align-items: center;
-}
-
-.layer-1-head-color {
+.dev-head {
   color: rgba(13, 19, 33, 0.7);
 }
 
-.layer-1-head-para {
-  font-size: 16px;
-  font-weight: normal;
-  color: #0d1321;
-  margin-bottom: 32px;
+.dev-para {
+  color: rgba(13, 19, 33, 1);
 }
 
 .dev-layer {
-  padding: 48px;
-  justify-content: space-between;
-  margin: 0px 100px;
-  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
   border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
 }
 
-.video-container {
-  margin: 80px 150px;
+.part-1 {
+  width: 480px;
 }
+
+/* Video Section */
 
 .vid-container {
   padding: 32px;
   border-radius: 16px;
-  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+  /* background-color: rgba(13, 19, 33, 0.2); */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.vid {
+.video {
+  width: 1135px;
+  height: 615px;
   border-radius: 16px;
-  margin: auto;
 }
 
-.target-container {
-  justify-content: space-around;
+/* Target page */
+
+.target-part-1 {
+  width: 364px;
+  background-color: rgba(255, 76, 30, 0.05);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.targets {
   gap: 24px;
 }
 
-.target-1-container {
-  padding: 40px;
-  background-color: rgba(255, 76, 30, 0.05);
-  border-radius: 16px;
-}
-
-.target-2-container {
-  padding: 40px;
+.part-2 {
   background-color: rgba(0, 76, 232, 0.05);
-  border-radius: 16px;
 }
 
-.target-3-container {
-  padding: 40px;
+.part-3 {
   background-color: rgba(255, 223, 0, 0.05);
-  border-radius: 16px;
 }
 
-.container-1 {
-  border-radius: 16px;
-  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
-  padding: 40px;
-  align-items: center;
-  gap: 40px;
-}
+/* Support Section */
 
-.support-container {
+.support {
   background-image: url("../assets/handshake.jpg");
-  /* background-size: 100%; */
-  background-repeat: no-repeat;
   background-position: center;
   padding: 64px 48px;
-  align-items: center;
   border-radius: 16px;
-}
-
-.input {
-  border-radius: 8px;
-  padding: 17px 24px;
-  font-weight: 600px;
-  font-size: 20px;
-  color: #0d1321;
-  border-style: none;
-  width: 50%;
-  margin: auto;
 }
 
 .white {
   color: white;
 }
 
+input {
+  padding: 20px;
+  border-radius: 8px;
+  border-style: none;
+  width: 50%;
+}
+
+.submit {
+  padding: 20px;
+  border-radius: 8px;
+  border-style: none;
+}
+
+/* footer*/
+
 footer {
-  align-items: center;
-  justify-content: space-between;
   background-color: rgba(13, 19, 33, 0.03);
-  padding: 80px 150px;
+  padding: 32px 150px;
 }
